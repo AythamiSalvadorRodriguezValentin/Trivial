@@ -1,0 +1,288 @@
+body{
+    font-family: Arial;
+    font-size: 15px;
+    color: #858585;
+    margin: 0;
+}
+
+#initPage{
+    width: 100%;
+    height: 100%;
+    position: fixed; /*REVISAR AJUSTE DE PORTADA*/
+    background: url("../img/bkg-initPage.jpg");
+    color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    /*display: none; */ /*REVISAR AJUSTE DE PORTADA*/
+}
+
+#logoBear{
+    position: fixed;
+    top: 0;
+    left: 60%;
+    z-index: -5;
+}
+
+h1{
+    font-size: 6em;
+    font-family: "A Love of Thunder";
+    margin: 10px;
+}
+
+h1 span{
+    font-size: 1.3em;
+    color: #557ca9;
+}
+
+.wrapper{
+    width: 1000px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+#loadGamers{
+    color: #858585;
+}
+
+.userSelection{
+    background: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 0 0 20px 0;
+}
+
+#loadCategories{
+    width: 400px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    padding: 0;
+}
+
+#playBtn{
+    font-family: "A Love of Thunder";
+    font-size: 3em;
+    color: #383838;
+    cursor: pointer;
+}
+h2{
+    font-size: 3.5em;
+    color: white;
+    font-family: "A Love of Thunder";
+    align-self: flex-start;
+    margin: 0;
+}
+
+#loadCategories ul{
+    background: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    margin: 0;
+}
+li{
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    background: black;
+    list-style: none;
+    color: white;
+    display: inline-block;
+    font-family: "Nunito";
+    font-weight: 600;
+    margin: 5px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.color-selector{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 5px 0 0 10px;
+}
+
+.color{
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 3px;
+    box-sizing: content-box;
+    margin: 5px;
+}
+
+/*TABLERO DE JUEGO*/
+/*------------------------------------------*/
+
+/*TABLERO DE JUEGO - TOP*/
+/*------------------------------------------*/
+nav{
+    width: 100%;
+    height: 50px;
+    line-height: 50x;
+    background: #383838;
+    display: inline-block;
+}
+
+nav h2{
+    font-size: 3em;
+    margin-left: 25px;
+}
+
+/*TABLERO DE JUEGO - SCOREBOARD*/
+/*------------------------------------------*/
+
+#scoreBoard{
+    height: 120px;
+    background: #858585;
+    background: url("../img/bkg-initPage.jpg");
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.scoreUser{
+    width: 200px;
+    background: white;
+    font-family: "Nunito";
+    font-size:  1.2em;
+    font-weight: 800;
+    margin-left: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    padding: 8px;
+}
+
+.scoreUser:hover{
+    border: 5px solid palevioletred;
+}
+.scoreUser__name{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.scoreUser__score{
+    background: gainsboro;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 400;
+    padding: 3px;
+    margin: 5px 0;
+    color: grey;
+}
+
+.scoreUser__color{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background: palevioletred;
+    color: white;
+}
+
+.scoreUser__trophies{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 2px 0;
+}
+
+.trophy{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0.35em rgba(0, 0, 0, 0.3);
+}
+.trophy:hover{
+    background: palegreen;
+    box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.35);
+}
+
+/*TABLERO DE JUEGO - QUESTION SECTION*/
+/*------------------------------------------*/
+#section--question{
+    position: fixed;
+    z-index: -50;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#question-box{
+    margin-top: 100px;
+    width: 700px;
+    height: 350px;
+    max-height: 450px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    border: 1px solid black
+}
+
+.selectCategory h2{
+    text-align: center;
+    color: black;
+}
+
+.question__title{
+    font-family: "Nunito";
+    font-weight: 800;
+    font-size: 2.5em;
+    margin: 30px;
+}
+
+.selectAnswer{
+    display: none;
+}
+
+#barTime{
+    width: 600px;
+    height: 8px;
+    margin: 0 auto;
+    margin-top: 35px;
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+
+.fillBar{
+    width: 0px;
+    height: 100%;
+    background: white;
+}
+
+/*Miscelanea*/
+/*------------------------------------------*/
+.textbox{
+    background: white;
+    color: black;
+    text-align: left;
+    font-family: "Nunito";
+    font-size: 30px;
+    cursor: auto;
+    border: 0;
+    border-bottom: 1px dashed gray;
+    margin: 0 15px;
+}
+.textbox:focus{
+    outline:0px;
+}
